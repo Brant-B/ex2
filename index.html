@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业用户注册页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>我的企业</h1>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">企业介绍</a>
+            <a href="#">产品中心</a>
+            <a href="#">服务与支持</a>
+            <a href="#">联系我们</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="register-title">
+        <h2>用户注册</h2>
+        <img src="my_company_icon.png" alt="我的企业图标" class="company-icon">
+
+    </div>
+
+    <main>
+        <section class="form-section">
+            <h3>用户信息（必填）</h3>
+            <form>
+                <label for="username">用户名：</label>
+                <input type="text" id="username" required><br>
+                <label for="avatar">头像：</label>
+                <input type="file" id="avatar"><br>
+                <label for="password">密码：</label>
+                <input type="password" id="password" required><br>
+                <label for="confirm-password">确认密码：</label>
+                <input type="password" id="confirm-password" required><br>
+                <label for="email">电子邮箱：</label>
+                <input type="email" id="email" required><br>
+                <label for="gender">性别：</label>
+                <select id="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select><br>
+                <label for="birthday">生日：</label>
+                <input type="date" id="birthday" required><br>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h3>客户调查（可选）</h3>
+            <form>
+                <label for="source">从何了解产品：</label>
+                <input type="text" id="source"><br>
+                <label for="product-quantity">拥有产品数量：</label>
+                <input type="number" id="product-quantity"><br>
+                <label for="price-range">意向价格范围：</label>
+                <input type="text" id="price-range"><br>
+                <label for="interested-series">感兴趣产品系列：</label>
+                <input type="text" id="interested-series"><br>
+                <label for="interested-product">感兴趣的产品：</label>
+                <input type="text" id="interested-product"><br>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h3>意见建议（可选）</h3>
+            <textarea rows="4" cols="50"></textarea>
+        </section>
+
+        <div class="buttons">
+            <button type="submit">注册</button>
+            <button type="reset">复位</button>
+        </div>
+    </main>
+</body>
+</html>
