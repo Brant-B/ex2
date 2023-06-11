@@ -30,21 +30,27 @@
         <section class="form-section">
             <h3>用户信息（必填）</h3>
             <form>
-                <label for="username">用户名：</label>
-                <input type="text" id="username" required><br>
+                <label for="username">用户名</label>
+                <input type="text" id="username" name="username" placeholder="请输入3-12位英文字母"><br>
+        
                 <label for="avatar">头像：</label>
                 <input type="file" id="avatar"><br>
+
                 <label for="password">密码：</label>
-                <input type="password" id="password" required><br>
+                <input type="password" id="password" name="password" placeholder="请设置6-12位密码"><br>
+
                 <label for="confirm-password">确认密码：</label>
-                <input type="password" id="confirm-password" required><br>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="请再次输入密码"required><br>
+                
                 <label for="email">电子邮箱：</label>
                 <input type="email" id="email" required><br>
+                
                 <label for="gender">性别：</label>
                 <select id="gender">
                     <option value="male">男</option>
                     <option value="female">女</option>
                 </select><br>
+                
                 <label for="birthday">生日：</label>
                 <input type="date" id="birthday" required><br>
             </form>
@@ -54,21 +60,34 @@
             <h3>客户调查（可选）</h3>
             <form>
                 <label for="source">从何了解产品：</label>
-                <input type="text" id="source"><br>
+                <select id="source" name="source">
+                    <option value="">请选择</option>
+                    <option value="internet">互联网</option>
+                    <option value="friends">朋友推荐</option>
+                    <option value="advertisement">广告</option>
+                </select><br>
+        
                 <label for="product-quantity">拥有产品数量：</label>
-                <input type="number" id="product-quantity"><br>
+                <input type="number" id="owned-product-count" name="owned-product-count" min="0" placeholder="0"><br>
+
                 <label for="price-range">意向价格范围：</label>
-                <input type="text" id="price-range"><br>
-                <label for="interested-series">感兴趣产品系列：</label>
+                <input type="range" id="price-range" name="price-range" min="300" max="1000"><br>
+                
+                <label for="interested-series">意向产品系列：</label>
                 <input type="text" id="interested-series"><br>
+                
+
+                
                 <label for="interested-product">感兴趣的产品：</label>
-                <input type="text" id="interested-product"><br>
-            </form>
+                <button type="button">产品1</button>
+                <button type="button">产品2</button>
+                <button type="button">产品3</button>
+            </form><br>
         </section>
 
         <section class="form-section">
             <h3>意见建议（可选）</h3>
-            <textarea rows="4" cols="50"></textarea>
+            <textarea rows="4"></textarea>
         </section>
 
         <div class="buttons">
